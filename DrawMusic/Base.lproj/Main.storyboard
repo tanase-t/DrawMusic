@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WFR-aP-0RR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="DrawMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </sceneKitView>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="285" y="1875"/>
+        </scene>
+        <!--Select Music View Controller-->
+        <scene sceneID="We6-rn-rLS">
+            <objects>
+                <viewController id="WFR-aP-0RR" customClass="SelectMusicViewController" customModule="DrawMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bzw-xO-efp"/>
+                        <viewControllerLayoutGuide type="bottom" id="VFz-uO-XCo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EVg-7d-ghG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Szs-hG-phr">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicTableCell" id="R1f-2j-WNR" customClass="MusicTableCell" customModule="DrawMusic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MusicInfoCell" tableViewCell="R1f-2j-WNR" id="9Yv-gU-BSI">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCq-7T-OmK">
+                                                    <rect key="frame" x="8" y="8" width="584" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DCq-7T-OmK" secondAttribute="trailing" id="8HE-BU-6Yl"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="DCq-7T-OmK" secondAttribute="bottom" id="8sB-gA-u83"/>
+                                                <constraint firstItem="DCq-7T-OmK" firstAttribute="top" secondItem="9Yv-gU-BSI" secondAttribute="topMargin" id="gYz-Ia-mRS"/>
+                                                <constraint firstItem="DCq-7T-OmK" firstAttribute="leading" secondItem="9Yv-gU-BSI" secondAttribute="leadingMargin" id="x8p-oy-fct"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="title" destination="DCq-7T-OmK" id="CNq-Pd-BgR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="WFR-aP-0RR" id="BNy-0Q-LRp"/>
+                                    <outlet property="delegate" destination="WFR-aP-0RR" id="yT1-N2-zc0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VFz-uO-XCo" firstAttribute="top" secondItem="Szs-hG-phr" secondAttribute="bottom" id="LrG-yd-dgA"/>
+                            <constraint firstItem="Szs-hG-phr" firstAttribute="top" secondItem="Bzw-xO-efp" secondAttribute="bottom" id="OFc-in-LNT"/>
+                            <constraint firstItem="Szs-hG-phr" firstAttribute="leading" secondItem="EVg-7d-ghG" secondAttribute="leading" id="bpZ-Ju-km1"/>
+                            <constraint firstAttribute="trailing" secondItem="Szs-hG-phr" secondAttribute="trailing" id="irs-rv-LEJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableview" destination="Szs-hG-phr" id="v0l-9W-Dgm"/>
+                        <segue destination="BV1-FR-VrT" kind="show" id="emP-Br-ZyS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9RX-Yk-PFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285" y="1032"/>
+        </scene>
+    </scenes>
+</document>
