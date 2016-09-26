@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E4EFCCE1D817EB6004EC7B0 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4EFCCD1D817EB6004EC7B0 /* GLKit.framework */; };
+		0E4EFCD21D817EE1004EC7B0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4EFCD11D817EE1004EC7B0 /* OpenGLES.framework */; };
+		0E4EFCD51D818000004EC7B0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4EFCD41D818000004EC7B0 /* StartViewController.swift */; };
+		0EB9FA071D993F47003D46D0 /* PlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB9FA061D993F47003D46D0 /* PlayScene.swift */; };
+		0EB9FA0B1D9943A8003D46D0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB9FA0A1D9943A8003D46D0 /* SpriteKit.framework */; };
 		0EC29F421D801F5F0090636C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC29F411D801F5F0090636C /* AppDelegate.swift */; };
 		0EC29F441D801F5F0090636C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EC29F431D801F5F0090636C /* art.scnassets */; };
-		0EC29F461D801F5F0090636C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC29F451D801F5F0090636C /* GameViewController.swift */; };
 		0EC29F491D801F5F0090636C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC29F471D801F5F0090636C /* Main.storyboard */; };
 		0EC29F4B1D801F5F0090636C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EC29F4A1D801F5F0090636C /* Assets.xcassets */; };
 		0EC29F4E1D801F5F0090636C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC29F4C1D801F5F0090636C /* LaunchScreen.storyboard */; };
@@ -38,10 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E4EFCCD1D817EB6004EC7B0 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		0E4EFCCF1D817EC8004EC7B0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0E4EFCD11D817EE1004EC7B0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0E4EFCD41D818000004EC7B0 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		0EB9FA061D993F47003D46D0 /* PlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayScene.swift; sourceTree = "<group>"; };
+		0EB9FA0A1D9943A8003D46D0 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		0EC29F3E1D801F5F0090636C /* DrawMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EC29F411D801F5F0090636C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EC29F431D801F5F0090636C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		0EC29F451D801F5F0090636C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		0EC29F481D801F5F0090636C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EC29F4A1D801F5F0090636C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EC29F4D1D801F5F0090636C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB9FA0B1D9943A8003D46D0 /* SpriteKit.framework in Frameworks */,
+				0E4EFCD21D817EE1004EC7B0 /* OpenGLES.framework in Frameworks */,
+				0E4EFCCE1D817EB6004EC7B0 /* GLKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +94,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E4EFCD31D817FE0004EC7B0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0EC29F711D8021FD0090636C /* SelectMusicViewController.swift */,
+				0E4EFCD41D818000004EC7B0 /* StartViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		0EC29F351D801F5F0090636C = {
 			isa = PBXGroup;
 			children = (
+				0EB9FA0A1D9943A8003D46D0 /* SpriteKit.framework */,
+				0E4EFCD11D817EE1004EC7B0 /* OpenGLES.framework */,
+				0E4EFCCF1D817EC8004EC7B0 /* QuartzCore.framework */,
+				0E4EFCCD1D817EB6004EC7B0 /* GLKit.framework */,
 				0EC29F401D801F5F0090636C /* DrawMusic */,
 				0EC29F571D801F5F0090636C /* DrawMusicTests */,
 				0EC29F621D801F5F0090636C /* DrawMusicUITests */,
@@ -105,16 +130,16 @@
 		0EC29F401D801F5F0090636C /* DrawMusic */ = {
 			isa = PBXGroup;
 			children = (
+				0E4EFCD31D817FE0004EC7B0 /* ViewControllers */,
 				0EC29F761D80282B0090636C /* Views */,
 				0EC29F731D8023570090636C /* Models */,
 				0EC29F411D801F5F0090636C /* AppDelegate.swift */,
 				0EC29F431D801F5F0090636C /* art.scnassets */,
-				0EC29F451D801F5F0090636C /* GameViewController.swift */,
 				0EC29F471D801F5F0090636C /* Main.storyboard */,
 				0EC29F4A1D801F5F0090636C /* Assets.xcassets */,
 				0EC29F4C1D801F5F0090636C /* LaunchScreen.storyboard */,
 				0EC29F4F1D801F5F0090636C /* Info.plist */,
-				0EC29F711D8021FD0090636C /* SelectMusicViewController.swift */,
+				0EB9FA061D993F47003D46D0 /* PlayScene.swift */,
 			);
 			path = DrawMusic;
 			sourceTree = "<group>";
@@ -221,6 +246,7 @@
 				TargetAttributes = {
 					0EC29F3D1D801F5F0090636C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N23H36KGDG;
 					};
 					0EC29F531D801F5F0090636C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -285,11 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EC29F461D801F5F0090636C /* GameViewController.swift in Sources */,
+				0EB9FA071D993F47003D46D0 /* PlayScene.swift in Sources */,
 				0EC29F721D8021FD0090636C /* SelectMusicViewController.swift in Sources */,
 				0EC29F421D801F5F0090636C /* AppDelegate.swift in Sources */,
 				0EC29F751D8023650090636C /* AlbumInfo.swift in Sources */,
 				0EC29F781D80284F0090636C /* MusicTableCell.swift in Sources */,
+				0E4EFCD51D818000004EC7B0 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +551,7 @@
 				0EC29F6A1D801F5F0090636C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EC29F6B1D801F5F0090636C /* Build configuration list for PBXNativeTarget "DrawMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +560,7 @@
 				0EC29F6D1D801F5F0090636C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EC29F6E1D801F5F0090636C /* Build configuration list for PBXNativeTarget "DrawMusicUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +569,7 @@
 				0EC29F701D801F5F0090636C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
