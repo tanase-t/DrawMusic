@@ -22,6 +22,16 @@
 		0EC29F721D8021FD0090636C /* SelectMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC29F711D8021FD0090636C /* SelectMusicViewController.swift */; };
 		0EC29F751D8023650090636C /* AlbumInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC29F741D8023650090636C /* AlbumInfo.swift */; };
 		0EC29F781D80284F0090636C /* MusicTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC29F771D80284F0090636C /* MusicTableCell.swift */; };
+		0EE4392A1DA26AEA00695E90 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE439291DA26AEA00695E90 /* Target.swift */; };
+		0EE4392C1DA26C2600695E90 /* BackgroundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4392B1DA26C2600695E90 /* BackgroundManager.swift */; };
+		0EE4392E1DA26C3100695E90 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4392D1DA26C3100695E90 /* GameManager.swift */; };
+		0EE439301DA26C5D00695E90 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4392F1DA26C5D00695E90 /* Music.swift */; };
+		0EE439321DA26CC300695E90 /* ScrollTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE439311DA26CC300695E90 /* ScrollTarget.swift */; };
+		0EE439341DA26CD300695E90 /* SimpleTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE439331DA26CD300695E90 /* SimpleTarget.swift */; };
+		0EE439361DA26DC300695E90 /* TargetGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE439351DA26DC300695E90 /* TargetGroup.swift */; };
+		0EE439381DA26ECA00695E90 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE439371DA26ECA00695E90 /* MusicManager.swift */; };
+		0EE4393A1DA26F2100695E90 /* BeatMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE439391DA26F2100695E90 /* BeatMap.swift */; };
+		0EE4393C1DA26FDC00695E90 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4393B1DA26FDC00695E90 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +74,16 @@
 		0EC29F711D8021FD0090636C /* SelectMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMusicViewController.swift; sourceTree = "<group>"; };
 		0EC29F741D8023650090636C /* AlbumInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumInfo.swift; sourceTree = "<group>"; };
 		0EC29F771D80284F0090636C /* MusicTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableCell.swift; sourceTree = "<group>"; };
+		0EE439291DA26AEA00695E90 /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		0EE4392B1DA26C2600695E90 /* BackgroundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundManager.swift; sourceTree = "<group>"; };
+		0EE4392D1DA26C3100695E90 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		0EE4392F1DA26C5D00695E90 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		0EE439311DA26CC300695E90 /* ScrollTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollTarget.swift; sourceTree = "<group>"; };
+		0EE439331DA26CD300695E90 /* SimpleTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTarget.swift; sourceTree = "<group>"; };
+		0EE439351DA26DC300695E90 /* TargetGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetGroup.swift; sourceTree = "<group>"; };
+		0EE439371DA26ECA00695E90 /* MusicManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		0EE439391DA26F2100695E90 /* BeatMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatMap.swift; sourceTree = "<group>"; };
+		0EE4393B1DA26FDC00695E90 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +186,16 @@
 			isa = PBXGroup;
 			children = (
 				0EC29F741D8023650090636C /* AlbumInfo.swift */,
+				0EE439291DA26AEA00695E90 /* Target.swift */,
+				0EE4392B1DA26C2600695E90 /* BackgroundManager.swift */,
+				0EE4392D1DA26C3100695E90 /* GameManager.swift */,
+				0EE4392F1DA26C5D00695E90 /* Music.swift */,
+				0EE439311DA26CC300695E90 /* ScrollTarget.swift */,
+				0EE439331DA26CD300695E90 /* SimpleTarget.swift */,
+				0EE439351DA26DC300695E90 /* TargetGroup.swift */,
+				0EE439371DA26ECA00695E90 /* MusicManager.swift */,
+				0EE439391DA26F2100695E90 /* BeatMap.swift */,
+				0EE4393B1DA26FDC00695E90 /* Video.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -312,9 +342,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EB9FA071D993F47003D46D0 /* PlayScene.swift in Sources */,
+				0EE439381DA26ECA00695E90 /* MusicManager.swift in Sources */,
 				0EC29F721D8021FD0090636C /* SelectMusicViewController.swift in Sources */,
+				0EE4392A1DA26AEA00695E90 /* Target.swift in Sources */,
 				0EC29F421D801F5F0090636C /* AppDelegate.swift in Sources */,
+				0EE4392E1DA26C3100695E90 /* GameManager.swift in Sources */,
+				0EE439321DA26CC300695E90 /* ScrollTarget.swift in Sources */,
+				0EE439361DA26DC300695E90 /* TargetGroup.swift in Sources */,
+				0EE439341DA26CD300695E90 /* SimpleTarget.swift in Sources */,
 				0EC29F751D8023650090636C /* AlbumInfo.swift in Sources */,
+				0EE4392C1DA26C2600695E90 /* BackgroundManager.swift in Sources */,
+				0EE439301DA26C5D00695E90 /* Music.swift in Sources */,
+				0EE4393A1DA26F2100695E90 /* BeatMap.swift in Sources */,
+				0EE4393C1DA26FDC00695E90 /* Video.swift in Sources */,
 				0EC29F781D80284F0090636C /* MusicTableCell.swift in Sources */,
 				0E4EFCD51D818000004EC7B0 /* StartViewController.swift in Sources */,
 			);
